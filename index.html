@@ -34,6 +34,30 @@
             line-height: 2.2;
             margin: 18px 0;
         }
+
+        .audio-box {
+            margin-top: 45px;
+        }
+
+        audio {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .download {
+            display: inline-block;
+            margin-top: 20px;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #fff;
+            padding: 10px 22px;
+            font-size: 16px;
+        }
+
+        .download:hover {
+            background: #fff;
+            color: #000;
+        }
     </style>
 </head>
 
@@ -47,6 +71,17 @@
         <p>اما این تازه آغاز ماجراست.</p>
 
         <p>از اینجا به بعد، هیچ چیز را ساده فرض نکن.</p>
+
+        <div class="audio-box">
+            <audio controls>
+                <source src="Audio_file.wav" type="audio/wav">
+                مرورگر شما از پخش این فایل صوتی پشتیبانی نمی‌کند.
+            </audio>
+
+            <br>
+
+            <a class="download" href="Audio_file.wav" download>دانلود فایل صوتی</a>
+        </div>
     </div>
 
 </body>
